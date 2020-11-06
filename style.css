@@ -1,0 +1,94 @@
+#title{
+    text-align: center;
+    font-family: "Bodoni MT", "Helvetica", "Lucida sans";
+    font-size: 35px;
+  }
+  #description {
+     text-align: center;
+     font-family: "Bodoni MT", "Helvetica", "Lucida sans";
+    font-size: 25px;
+    
+  }
+  
+  body
+  {
+    background-color: #B0C4DE;
+  }
+  
+  p
+  {
+    font-size: 22px;
+    margin: auto auto 10px auto;
+    
+  }
+  
+  label, textarea
+  {
+    font-size: 22px;
+    
+  }
+  
+  main{
+    background-color: #3c3a3a;
+    padding: 2.5rem 2.5rem;
+    width: 500px;
+    margin: auto;
+  
+  }
+  .form-inputs
+  {
+    display: block;
+    margin: 10px 0px 15px 0px;
+    height: 30px;
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 1.2em;
+    
+  }
+   
+  #dropdown
+  {
+    display: block;
+    margin: 10px 0px 15px 0px;
+    height: 40px;
+    width: 95%;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    font-size: 1.2em;
+  }
+  
+  
+  .input-radio, .input-checkbox
+  {
+   min-width: 1.25rem;
+   display: inline-block;
+  }
+  
+  .input-textarea {
+    min-height: 120px;
+    width: 97%;
+  }
+  
+  #submit{
+    display: block;
+    width: 50%;
+    margin: 10px auto auto 100px;
+    padding: 0.75rem;
+    background: #595e94;
+    border-radius: 2px;
+    cursor: pointer;
+    
+  }
+  
+  .survey-questions
+  {
+    margin: auto;
+  }
+  
+  
+  

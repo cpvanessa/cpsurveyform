@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Code Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="title"> Free Code Survey Form</h1>
+    <p id="description"> Please, fill this survey to help us to improve</p>
+ 
+<main>
+  <form action="form.php" id="survey-form" method="post">
+   <div class="form-group">
+      <label for="name" id="name-label"> Name </label>
+  <input
+         id="name" 
+         type="text" 
+         name="name" 
+         placeholder="Enter your name"              
+         class="form-inputs"
+         required
+         
+  > 
+    
+    <label for="number" id="number-label"> Age </label>
+  <input 
+         id="number" 
+         type="number" 
+         name="number" 
+         placeholder="Enter your age"               
+         class="form-inputs" 
+         min="18" max="100" 
+         required
+         
+   >
+   
+  <label for="email" id="email-label"> Email </label>
+  <input 
+         id="email" 
+         type="email" 
+         method= "post"
+         name = "email"
+         placeholder="Enter your Email"             
+         class="form-inputs" 
+         required
+  >
+    </div>
+   <label for="dropdown" id="course" > Which certificate did you finished first?</label>
+  <select name='opciones' id="dropdown">
+    <option disabled selected value>Select</option>
+    <option value = "WebDesign">Web Design</option>
+    <option value = "Javascript"> Javascript</option>
+    <option value = "FrontEnd"> Front End</option>
+    <option value = "DataAnalysis"> Data Analysis</option>
+    <option value = "QualityAssurance"> Quality Assurance</option>
+</select>
+  
+<div class="survey-questions">
+  <br>
+    <p>What's your evaluation of the course?</p>
+      <label>
+        <input
+          name="user-satisfaction"
+          value="very satisfied"
+          type="radio"
+          class="input-radio"
+          checked
+        />Very satisfied</label
+      ><br>
+      <label>
+        <input
+          name="user-satisfaction"
+          value="satisfied"
+          type="radio"
+          class="input-radio"
+        />Satisfied</label><br>
+
+      <label
+        ><input
+          name="user-satisfaction"
+          value="not satisfied"
+          type="radio"
+          class="input-radio"
+        />Not satisfied</label> 
+      
+     </div>    
+      
+
+     <div class="survey-questions">
+      <br>
+     <p>What would you like to improve? (check all that apply)</p>
+       <label> <input
+          name="improve[]"
+          value="forums"
+          type="checkbox"
+          class="input-checkbox"
+        />Forums</label><br>
+        <label> <input
+          name="improve[]"
+          value="exercices"
+          type="checkbox"
+          class="input-checkbox"
+        />Exercices</label><br>
+        <label> <input
+          name="improve[]"
+          value="exams"
+          type="checkbox"
+          class="input-checkbox"
+        />Exams</label><br>
+        
+       <label> <input
+          name="improve[]"
+          value="documentation"
+          type="checkbox"
+          class="input-checkbox"
+        />Documentation</label><br>
+        
+       <label> <input
+          name="improve[]"
+          value="projects"
+          type="checkbox"
+          class="input-checkbox"
+        />Projects</label><br>
+       </div>
+  <div class="survey-questions">
+      <br><p>Write any commments or suggestions</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+  </div>
+ 
+<div class="survey-form">
+      <button
+         type="submit"
+         id="submit" 
+         class="submit-button">
+        Submit
+      </button>
+    </div>
+</form>
+    
+</main>
+    
+</body>
+</html>
